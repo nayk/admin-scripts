@@ -9,7 +9,7 @@ cmd = 'sudo /etc/init.d/zabbix-agentd restart'
 #cmd = 'scp %s' % file
 server_type = sys.argv[1]
 
-connection = MySQLdb.connect(host='servers.nayk.pro', user='ertelecom', passwd='9uajkj1kL', db='ertelecom')
+connection = MySQLdb.connect(host='servers.nayk.pro', user='ertelecom', passwd='9uajkj1kL!', db='ertelecom')
 cursor = connection.cursor()
 
 cursor.execute("select id, name from servers_servertype where name = '%s';"  % server_type)
